@@ -1,0 +1,8 @@
+spring:
+    application:
+        name: CNASpringConfigServer
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://github.com/hinyinlam-pivotal/cna-configrepo

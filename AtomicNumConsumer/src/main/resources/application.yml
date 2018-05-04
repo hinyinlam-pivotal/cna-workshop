@@ -1,0 +1,25 @@
+---
+spring:
+  #profiles: cloud
+  application:
+    #name: ${vcap.application.application_name}
+    name: atomicnumconsumer
+
+security:
+  basic:
+    enabled: false
+
+#geureka:
+#g  instance:
+#g    hostname: ${vcap.application.application_uris[0]}
+#g    non-secure-port: 80
+#g    secure-port: 443
+#g    secure-port-enabled: true
+#g    metadataMap:
+#g          instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+#g  client:
+#g    registerWithEureka: true
+#g    service-url:
+#g      defaultZone: http://${EUREKA_PEER}/eureka
+#g
+

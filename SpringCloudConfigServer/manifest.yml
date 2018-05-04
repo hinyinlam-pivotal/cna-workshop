@@ -1,0 +1,8 @@
+---
+applications:
+  - name: cna-spring-cloud-config-server-{$random-word}
+    path: target/cloudconfigserver-1.0-SNAPSHOT.jar
+    memory: 512M
+    #Uncomment the below and change the git URI to your forked github repo
+    #env:
+    #  JAVA_OPTS: "-Dspring.cloud.config.server.git.uri=https://github.com/hinyinlam-pivotal/cna-configrepo"
