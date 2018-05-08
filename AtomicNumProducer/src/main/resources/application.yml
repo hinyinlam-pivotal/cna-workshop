@@ -4,10 +4,14 @@ spring:
   application:
     name: ${vcap.application.application_name}
 
+---
 security:
   basic:
     enabled: false
 
+management:
+  security:
+    enabled: false
 #
 #eureka:
 #  instance:

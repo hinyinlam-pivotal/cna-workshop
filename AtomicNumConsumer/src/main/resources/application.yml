@@ -1,14 +1,17 @@
 ---
 spring:
-  #profiles: cloud
+  profiles: cloud
   application:
-    #name: ${vcap.application.application_name}
-    name: atomicnumconsumer
+    name: ${vcap.application.application_name}
+    #name: atomicnumconsumer
 
+---
 security:
   basic:
     enabled: false
-
+management:
+  security:
+    enabled: false
 #geureka:
 #g  instance:
 #g    hostname: ${vcap.application.application_uris[0]}

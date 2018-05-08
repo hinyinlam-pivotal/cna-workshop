@@ -22,7 +22,7 @@ public class AtomicNumProducerApplication {
 		SpringApplication.run(AtomicNumProducerApplication.class, args);
 	}
 
-	@Value("${vcap.application.instance_index}")
+	@Value("${vcap.application.instance_index:-1}")
 	String containerIndex;
 
 	AtomicLong counter=new AtomicLong(0l);
