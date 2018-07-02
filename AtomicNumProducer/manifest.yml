@@ -1,7 +1,7 @@
 ---
 applications:
   - name: cna-atomic-num-producer-yourname
-    memory: 600M
+    memory: 700M
     path: target/atomicnumproducer-0.0.1-SNAPSHOT.jar
 #    services:
 #    - eureka-service
